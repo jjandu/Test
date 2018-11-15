@@ -8,7 +8,7 @@ pipeline {
     }
     stage('send email') {
       steps {
-        emailext(subject: 'test123', body: 'this is a test sent by JJ', from: 'j.jandu@jandusolutions.com', replyTo: 'j.jandu@jandusolutions.com', to: 'j.jandu@jandusolutions.com')
+        mail(subject: 'test123', body: 'test123', from: 'j.jandu@jandusolutions.com', replyTo: 'j.jandu@jandusolutions.com', to: 'j.jandu@jandusolutions.com')
       }
     }
   }
