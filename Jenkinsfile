@@ -1,11 +1,6 @@
 pipeline {
   agent any
   stages {
-    stage('create location') {
-      steps {
-        ws(dir: 'Test123')
-      }
-    }
     stage('run script') {
       steps {
         echo 'do something'
