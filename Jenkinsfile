@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('create location') {
       steps {
-        ws(dir: '.\\Test123')
+        ws(dir: 'Test123')
       }
     }
     stage('run script') {
